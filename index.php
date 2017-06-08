@@ -260,5 +260,5 @@
             </div>
         </div>
     </section>
-    <section class="mbr-section mbr-section-md-padding" id="social-buttons3-4" style="background-color: rgb(46, 46, 46); padding-top: 90px; padding-bottom: 90px;"></section>
+    <!-- <section class="mbr-section mbr-section-md-padding" id="social-buttons3-4" style="background-color: rgb(46, 46, 46); padding-top: 90px; padding-bottom: 90px;"></section> -->
 <?php include 'templates/footer.php'; ?>

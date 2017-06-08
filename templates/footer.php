@@ -1,12 +1,7 @@
 <footer class="mbr-small-footer mbr-section mbr-section-nopadding" id="footer1-7" style="background-color: rgb(0, 0, 0); padding-top: 1.75rem; padding-bottom: 1.75rem;">
     <div class="container">
         <p class="text-xs-center">&copy;
-            <script type="text/javascript">
-                var cur = 2017; var year = new Date();
-                if(cur == year.getFullYear()) year = year.getFullYear();
-                else year = cur + ' - ' + year.getFullYear();
-                document.write(year);
-            </script>
+            <?php echo date("Y"); ?>
             <a href="mailto:Dr-Cert@center4certs.org">Center For Certification</a>
         </p>
     </div>
