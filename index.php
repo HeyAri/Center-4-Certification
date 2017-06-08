@@ -88,7 +88,7 @@
                     <td>
                         <label class="col-md-4 text-right control-label" for="email">Email</label>
                         <div class="col-md-4">
-                            <input id="email" name="email" placeholder="name@domain.extension" class="form-control input-md" required type="text">
+                            <input id="email" name="email" placeholder="name@domain.extension" class="form-control input-md" required type="email">
                         </div>
                     </td>
                 </tr>
