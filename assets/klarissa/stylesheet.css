@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'klarissa_contourregular';
+    src: url('klarissacontour-webfont.woff2') format('woff2'),
+         url('klarissacontour-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.border-highlight {
+    border:5px dashed red; 
+}
