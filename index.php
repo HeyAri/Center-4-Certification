@@ -136,7 +136,7 @@
                     <td>
                         <label class="col-md-4 text-right control-label" for="certification">You Selected</label>
                         <div class="col-md-4">
-                            <input type="text" name="certification" id="certification" placeholder="Or type yours in here" class="form-control input-md" required readonly>
+                            <input type="text" name="certification" id="certification" placeholder="Or type yours in here" class="form-control input-md" required>
                         </div>
                         <br>
                         <br>
