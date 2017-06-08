@@ -25,49 +25,44 @@
         </nav>
     </section>
     <section>
-        <center>
-            <div style="position: absolute" width="1000" height="768" border="0" padding:20px;> <img src="images/C4C-<?php echo $_POST['certColor']; ?>.png"></div>
-                <div align="center" style="position: absolute; left: 301px; top: 210px; width: 418px; height: 429px;" width="1000" text-align: center; padding:20px>
-                        <h3><font face="klarissa_contourregular"><?php echo $_POST['certDate'] ?></font><br /></h3>
-                    		<img src="images/spacer.gif" width="415" height="106"><br>
-            			<h2><font face="klarissa_contourregular"><?php echo  $_POST['certification']; ?></font><br /></h2>
-            				<img src="images/spacer.gif" width="413" height="98"><br>
-            			<h1><font face="klarissa_contourregular"><?php echo  $_POST['fullName']; ?></font><br /></h1>
-                	</div>
-                             <div height="800"> </div>
-        </center>
+            <div style="position: relative" width="1000" height="768" border="0" padding:"20px;">
+                <img src="images/C4C-<?php echo $_POST['certColor']; ?>.png">
+            </div>
+            <div align="center" style="position: absolute; left: 301px; top: 210px; width: 418px; height: 429px;" width="1000" text-align: center; padding:20px>
+                <h3><font face="klarissa_contourregular"><?php echo $_POST['certDate'] ?></font><br /></h3>
+            	<img src="images/spacer.gif" width="415" height="106"><br>
+    			<h2><font face="klarissa_contourregular"><?php echo  $_POST['certification']; ?></font><br /></h2>
+    			<img src="images/spacer.gif" width="413" height="98"><br>
+    			<h1><font face="klarissa_contourregular"><?php echo  $_POST['fullName']; ?></font><br /></h1>
+            </div>
     </section>
-    <section>
-     <center>
 
 <?php
 
-    require 'includes/PHPMailer-master/PHPMailerAutoload.php';
+require 'includes/PHPMailer-master/PHPMailerAutoload.php';
 
-    $mail = new PHPMailer;
-    $mail->setFrom('dr-cert@center4certs.org', 'Dr. Cert');         // How you wanna see it in your inbox
-    $mail->addAddress('dr-cert@center4certs.org', 'Dr. Cert');        // Whom it's being sent to
-    // $mail->addAddress('dr-cert@center4certs.org');                          // Name is also optional
-    // $mail->addReplyTo('info@example.com', 'Information');        // In case you wanna send to client
-    // $mail->addAttachment('/var/tmp/file.tar.gz');                // Add attachments
-    // $mail->addAttachment('/tmp/image.jpg', 'new.jpg');           // Optional name
-    $mail->isHTML(true);                                            // Set email format to HTML
-    $mail->Subject = $_POST['fullName'].' Certified Themself!';
-    $mail->Body    = $_POST['fullName'].' is now'."<br />";
-	$mail->Body    .= $_POST['certification'].' as of '."<br />";
-	$mail->Body    .= $_POST['certDate'].' and received a '."<br />";
-	$mail->Body    .= $_POST['certColor'].' certificate.'."<br /><br />";
-	$mail->Body    .= $_POST['email'].' '."<br />";
-	
-    if(!$mail->send()) {
-        echo 'Page could not be sent.<br />';
-        echo 'Page Error: ' . $mail->ErrorInfo;                   // Shows at the bottom of the page
-    } else {
-        echo 'You are officially certified by the powers vested in the Center for Certification.';                               // Shows at the bottom of the page
-    }
+$mail = new PHPMailer;
+$mail->setFrom('dr-cert@center4certs.org', 'Dr. Cert');         // How you wanna see it in your inbox
+$mail->addAddress('dr-cert@center4certs.org', 'Dr. Cert');      // Whom it's being sent to
+// $mail->addAddress('dr-cert@center4certs.org');               // Name is also optional
+// $mail->addReplyTo('info@example.com', 'Information');        // In case you wanna send to client
+// $mail->addAttachment('/var/tmp/file.tar.gz');                // Add attachments
+// $mail->addAttachment('/tmp/image.jpg', 'new.jpg');           // Optional name
+$mail->isHTML(true);                                            // Set email format to HTML
+$mail->Subject = $_POST['fullName'].' Certified Themself!';
+$mail->Body    = $_POST['fullName'].' is now'."<br />";
+$mail->Body    .= $_POST['certification'].' as of '."<br />";
+$mail->Body    .= $_POST['certDate'].' and received a '."<br />";
+$mail->Body    .= $_POST['certColor'].' certificate.'."<br /><br />";
+$mail->Body    .= $_POST['email'].' '."<br />";
 
-        include 'templates/footer.php';
+if(!$mail->send()) {
+    echo 'Page could not be sent.<br />';
+    echo 'Page Error: ' . $mail->ErrorInfo;                   // Shows at the bottom of the page
+} else {
+    echo '<br />You are officially certified by the powers vested in the Center for Certification.';                               // Shows at the bottom of the page
+}
+
+include 'templates/footer.php';
 
 ?>
-</section>
- </center>
