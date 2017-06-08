@@ -136,7 +136,7 @@
                     <td>
                         <label class="col-md-4 text-right control-label" for="certification">You Selected</label>
                         <div class="col-md-4">
-                            <input type="text" name="certification" id="certification" placeholder="Or type yours in here" class="form-control input-md" required readonly>
+                            <input type="text" name="certification" id="certification" placeholder="Or type yours in here" class="form-control input-md" required>
                         </div>
                         <br>
                         <br>
@@ -260,5 +260,5 @@
             </div>
         </div>
     </section>
-    <section class="mbr-section mbr-section-md-padding" id="social-buttons3-4" style="background-color: rgb(46, 46, 46); padding-top: 90px; padding-bottom: 90px;"></section>
+    <!-- <section class="mbr-section mbr-section-md-padding" id="social-buttons3-4" style="background-color: rgb(46, 46, 46); padding-top: 90px; padding-bottom: 90px;"></section> -->
 <?php include 'templates/footer.php'; ?>
