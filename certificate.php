@@ -16,12 +16,13 @@
                             </a>
                             <a class="navbar-caption" href="index.php"><font color="grey">Center For Certification</font></a>
                         </div>
+                                   <div align="right">
+                <button class="btn btn-primary" onClick="window.print()">Print your certificate</button>
+            </div>
                     </div>
                 </div>
             </div>
-            <div align="left"><br />
-                <button class="btn btn-primary" onClick="window.print()">Print your certificate</button>
-            </div>
+ 
         </nav>
     </section>
     <section>
@@ -36,7 +37,7 @@
     			<h1><font face="klarissa_contourregular"><?php echo  $_POST['fullName']; ?></font><br /></h1>
             </div>
     </section>
-
+<center>
 <?php
 
 require 'includes/PHPMailer-master/PHPMailerAutoload.php';
@@ -66,3 +67,4 @@ if(!$mail->send()) {
 include 'templates/footer.php';
 
 ?>
+</center>
