@@ -216,7 +216,7 @@
                         <!-- Button -->
                         <div class="form-group" align="center">
                             <!-- <button id="submit" name="submit" class="btn btn-primary" align="center" value="Generate Certificate">Get Your Certificate</button> -->
-                            <button class="g-recaptcha" data-sitekey="your_site_key" data-callback='onSubmit'>Get Your Certificate</button>
+                            <button class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" data-callback='onSubmit'>Get Your Certificate</button>
                         </div>
                     </td>
                 </tr>
