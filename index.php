@@ -216,10 +216,8 @@
                         <!-- Recaptcha -->
  
                         <div class="form-group" align="center">
-
-                            <!-- <button id="submit" name="submit" class="btn btn-primary" align="center" value="Generate Certificate">Get Your Certificate</button> -->
-                            <button class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" data-callback='onSubmit'>Get Your Certificate</button>
-                            
+                            <button id="submit" name="submit" class="btn btn-primary" align="center" value="Generate Certificate" >Get Your Certificate
+                            </button>
                         </div>
                     </td>
                 </tr>
@@ -228,15 +226,7 @@
             <input type="hidden" name="certDate" value="<?php echo  date("F j, Y"); ?>" />
         </form>
 
-        <script>
-            function onSubmit(token) {
-                $('#myForm').submit();
-            }
-        </script>
-
-
         <script>onload();</script>
-
 
         <style>
             .control-label {
