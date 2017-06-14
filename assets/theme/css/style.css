@@ -1561,6 +1561,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 .mbr-small-footer {
   background: #323232;
   color: #acacac;
+  opacity: 0.5;
   font-size: 0.8125rem;
   padding: 1.75rem 0; }
   .mbr-small-footer p {
@@ -1578,6 +1579,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 -------*/
 .mbr-footer {
   color: #fff;
+  opacity: 0.5;
   padding-left: 1.25rem;
   padding-right: 1.25rem; }
   @media (min-width: 1280px) {

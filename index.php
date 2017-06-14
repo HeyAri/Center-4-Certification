@@ -64,8 +64,7 @@
                     <p align="center">Are you certifiable?</p>
                     <p>&nbsp;</p>
                     <p>If so, Just fill out the form below, pick your certification topic, and print out your certificate. Accreditation is awarded on a lifetime basis. There are no pesky renewal fees, continuing education or other associations required. All we ask is that you notify us upon your death so that we may keep our records accurate.</p>
-                    <p>&nbsp;</p>
-                    <p>Do you have questions? <a href="mailto:Dr-Cert@center4certs.org">Email us</a> and we will get back to you...</p>
+
                 </div>
             </div>
         </div>
@@ -214,9 +213,13 @@
                 <tr>
                     <td>
                         <!-- Button -->
+                        <!-- Recaptcha -->
+ 
                         <div class="form-group" align="center">
+
                             <!-- <button id="submit" name="submit" class="btn btn-primary" align="center" value="Generate Certificate">Get Your Certificate</button> -->
                             <button class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" data-callback='onSubmit'>Get Your Certificate</button>
+                            
                         </div>
                     </td>
                 </tr>
@@ -224,11 +227,17 @@
             <!-- Everything has been filled out except for the timestamp, so we include that as a hidden variable -->
             <input type="hidden" name="certDate" value="<?php echo  date("F j, Y"); ?>" />
         </form>
+
         <script>
             function onSubmit(token) {
                 $('#myForm').submit();
             }
         </script>
+
+
+        <script>onload();</script>
+
+
         <style>
             .control-label {
                 padding: 10px;
