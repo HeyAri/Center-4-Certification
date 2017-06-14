@@ -215,7 +215,8 @@
                     <td>
                         <!-- Button -->
                         <div class="form-group" align="center">
-                            <button id="submit" name="submit" class="btn btn-primary" align="center" value="Generate Certificate">Get Your Certificate</button>
+                            <!-- <button id="submit" name="submit" class="btn btn-primary" align="center" value="Generate Certificate">Get Your Certificate</button> -->
+                            <button class="g-recaptcha" data-sitekey="your_site_key" data-callback='onSubmit'>Get Your Certificate</button>
                         </div>
                     </td>
                 </tr>
@@ -223,6 +224,11 @@
             <!-- Everything has been filled out except for the timestamp, so we include that as a hidden variable -->
             <input type="hidden" name="certDate" value="<?php echo  date("F j, Y"); ?>" />
         </form>
+        <script>
+            function onSubmit(token) {
+                $('#myForm').submit();
+            }
+        </script>
         <style>
             .control-label {
                 padding: 10px;
