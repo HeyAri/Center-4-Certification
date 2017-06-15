@@ -9,7 +9,7 @@
                 <div class="mbr-table-cell">
                     <div class="navbar-brand">
                         <a href="https://center4certs.org" class="navbar-logo">
-                            <img src="assets/images/c4c-logo-2000x1241.png" alt="Center For Certification" title="Center For Certification">
+                            <img src="assets/images/c4c-logo-2000x1241.png" title="Center For Certification">
                         </a>
                         <a class="navbar-caption" href="index.php">
                             Center For Certification
@@ -136,7 +136,7 @@
                 <td>
                     <label class="col-md-4 text-right control-label" for="certification">You Selected</label>
                     <div class="col-md-4">
-                        <input type="text" name="certification" id="certification" placeholder="Or type yours in here" class="form-control input-md" required>
+                        <input type="text" name="certification" id="certification" placeholder="Or type yours in here..." class="form-control input-md" required>
                     </div>
                     <br>
                     <br>
@@ -242,7 +242,5 @@
         </div>
     </div>
 </section>
-
-<script>onload();</script>
 
 <?php require_once 'templates/footer.php'; ?>

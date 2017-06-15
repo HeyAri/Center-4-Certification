@@ -22,13 +22,5 @@
     SocialShareKit.init();
 </script>
 
-<style>
-#footer1-7 {
-    background-color: rgb(0, 0, 0);
-    padding-top: 1.75rem;
-    padding-bottom: 1.75rem;
-}
-</style>
-
 </body>
 </html>
