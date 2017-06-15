@@ -39,12 +39,6 @@
         </div>
 </section>
 
-<style>
-    .btn + .btn {
-        margin-left: 0;
-    }
-</style>
-
 <?php
 
 include 'includes/emailAdmin.php';

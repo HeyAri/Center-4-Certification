@@ -1,5 +1,7 @@
 <?php include 'templates/head.php'; ?>
+
 <body>
+    
 <section id="menu-0">
     <nav class="navbar navbar-dropdown bg-color transparent navbar-fixed-top">
         <div class="container">
@@ -85,4 +87,5 @@
         </div>
     </div>
 </section>
+
 <?php include 'templates/footer.php'; ?>
