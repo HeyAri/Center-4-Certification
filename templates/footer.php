@@ -1,4 +1,4 @@
-<footer class="mbr-small-footer mbr-section mbr-section-nopadding" id="footer1-7" style="background-color: rgb(0, 0, 0); padding-top: 1.75rem; padding-bottom: 1.75rem;">
+<footer class="mbr-small-footer mbr-section mbr-section-nopadding" id="footer1-7">
     <div class="container">
         <p class="text-xs-center">&copy;
             <?php echo date("Y"); ?>
@@ -21,6 +21,14 @@
 <script type="text/javascript">
     SocialShareKit.init();
 </script>
+
+<style>
+#footer1-7 {
+    background-color: rgb(0, 0, 0);
+    padding-top: 1.75rem;
+    padding-bottom: 1.75rem;
+}
+</style>
 
 </body>
 </html>
