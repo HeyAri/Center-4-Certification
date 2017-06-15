@@ -148,31 +148,31 @@
                     <div class="col-md-4">
                         <label>
                             <input type="radio" name="certColor" value="curly"/>
-                            <img src="images/C4C-curly-thmb.png" />
+                            <img src="assets/images/C4C-curly-thmb.png" />
                         </label>
                         <label>
                             <input type="radio" name="certColor" value="gold"/>
-                            <img src="images/C4C-gold-thmb.png" />
+                            <img src="assets/images/C4C-gold-thmb.png" />
                         </label>
                         <label>
                             <input type="radio" name="certColor" value="emerald"/>
-                            <img src="images/C4C-emerald-thmb.png" />
+                            <img src="assets/images/C4C-emerald-thmb.png" />
                         </label>
                         <label>
                             <input type="radio" name="certColor" value="black"/>
-                            <img src="images/C4C-black-thmb.png" />
+                            <img src="assets/images/C4C-black-thmb.png" />
                         </label>
                         <label>
                             <input type="radio" name="certColor" value="green"/>
-                            <img src="images/C4C-green-thmb.png" />
+                            <img src="assets/images/C4C-green-thmb.png" />
                         </label>
                         <label>
                             <input type="radio" name="certColor" value="red"/>
-                            <img src="images/C4C-red-thmb.png" />
+                            <img src="assets/images/C4C-red-thmb.png" />
                         </label>
                         <label>
                             <input type="radio" name="certColor" value="blue"/>
-                            <img src="images/C4C-blue-thmb.png" />
+                            <img src="assets/images/C4C-blue-thmb.png" />
                         </label>
                     </div>
                     <br>
