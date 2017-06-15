@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="../assets/animate.css/animate.min.css">
     <link rel="stylesheet" href="../assets/theme/css/style.css">
     <link rel="stylesheet" href="../assets/mobirise/css/mbr-additional.css" type="text/css">
+    <link rel="stylesheet" href="../assets/css/style.css" type="text/css">
 
     <!-- Social Share Kit CSS -->
     <link rel="stylesheet" href="../assets/css/social-share-kit.css" type="text/css">

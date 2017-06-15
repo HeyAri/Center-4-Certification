@@ -243,28 +243,6 @@
     </div>
 </section>
 
-<style>
-
-form tr td div label input {
-    display: none;
-}
-label > input + img {
-    cursor:pointer;
-    border:2px solid transparent;
-}
-label > input:checked + img {
-    border:2px solid #f00;
-}
-.control-label {
-    padding: 10px;
-    margin: 0;
-}
-.nav-link.link {
-    text-align: right;
-}
-
-</style>
-
 <script>onload();</script>
 
 <?php require_once 'templates/footer.php'; ?>
