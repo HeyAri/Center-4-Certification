@@ -47,7 +47,7 @@
 
 <?php
 
-// include 'includes/emailAdmin.php';
+include 'includes/emailAdmin.php';
 require_once 'templates/footer.php';
 
 ?>
