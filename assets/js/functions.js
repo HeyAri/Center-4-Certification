@@ -7,3 +7,7 @@ $(document).ready(function() {
         $("#certification").val( this.value ); // this.value is enough for you
     }).val( $('#certification').val() ).change(); // for pre-selection trigger
 });
+
+$('#cert').change(function(){
+    $('#certification').val($(this).val());
+});

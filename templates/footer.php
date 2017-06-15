@@ -15,6 +15,7 @@
 <script src="../assets/jarallax/jarallax.js"></script>
 <script src="../assets/theme/js/script.js"></script>
 <script src="../assets/formoid/formoid.min.js"></script>
+<script src="../assets/js/functions.js"></script>
 
 <input name="animation" type="hidden">
 
