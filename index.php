@@ -1,5 +1,20 @@
 <?php require_once 'templates/head.php'; ?>
 
+<script type="text/javascript">
+
+    var onSubmit = function(token) {
+      console.log('success!');
+    };
+
+    var onloadCallback = function() {
+        grecaptcha.render('myForm', {
+            'sitekey' : '6LegwyUUAAAAAFMZkIdllyCloNdsdKExfzW3DQPP', // Production site key
+            // 'sitekey' : '6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI', // Local dev key
+        });
+    };
+
+</script>
+
 <body>
 
 <section id="menu-0">
@@ -210,6 +225,9 @@
         <!-- Everything has been filled out except for the timestamp, so we include that as a hidden variable -->
         <input type="hidden" name="certDate" value="<?php echo  date("F j, Y"); ?>" />
     </form>
+    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+        async defer>
+    </script>
 </section>
 <section class="mbr-section mbr-parallax-background" id="testimonials4-5" style="background-image: url(assets/images/certificate-hero-2000x1500.png); padding-top: 120px; padding-bottom: 120px;">
     <div class="mbr-overlay" style="opacity: 0.8; background-color: rgb(146, 146, 157);"></div>
