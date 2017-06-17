@@ -17,11 +17,11 @@
                         </a>
                         <a class="navbar-caption" href="index.php"><font color="grey">Center For Certification</font></a>
                     </div>
+			        <div align="right"><br />
+            <button class="btn btn-primary" onClick="window.print()">Print your certificate</button>
+        </div>
                 </div>
             </div>
-        </div>
-        <div align="left"><br />
-            <button class="btn btn-primary" onClick="window.print()">Print your certificate</button>
         </div>
     </nav>
 </section>
