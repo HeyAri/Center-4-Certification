@@ -125,7 +125,7 @@
                             <option value="Certified Rock God">Certified Rock God</option>
                             <option value="Certified Sex God<">Certified Sex God</option>
                             <option value="Certifiable Sports Fanatic">Certifiable Sports Fanatic</option>
-                            <option value="Certifiable Sports Fanatic">Certified Superhero</option>
+                            <option value="Certifiable Superhero">Certified Superhero</option>
                             <option value="Certifiably Terminal">Certifiably Terminal</option>
                         </select>
                     </div>
