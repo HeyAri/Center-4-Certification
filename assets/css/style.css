@@ -29,7 +29,3 @@ label > input:checked + img {
     padding-top: 1.75rem;
     padding-bottom: 1.75rem;
 }
-
-.grecaptcha-badge {
-    display: none !important;
-}
