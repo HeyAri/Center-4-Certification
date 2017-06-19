@@ -1,5 +1,12 @@
 <?php require_once 'templates/head.php'; ?>
+
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+<script>
+    function onSubmit(token) {
+        document.getElementById("myForm").submit();
+    }
+</script>
 
 <body>
 
@@ -75,7 +82,7 @@
     <div  align="center">
         <legend>Certify Yourself</legend>
     </div>
-    <form class="form-vertical" align="left" id="myForm" type="GET" action="certificate.php"  method="POST">
+    <form class="form-vertical" align="left" id="myForm" action="certificate.php"  method="POST">
         <table width="100%" align="center">
             <tr>
                 <td>
@@ -202,9 +209,8 @@
             <tr>
                 <td>
                     <div class="form-group" align="center">
-                        <div class="g-recaptcha" data-sitekey="6LegwyUUAAAAAFMZkIdllyCloNdsdKExfzW3DQPP"></div>
-                        <!-- <div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div> -->
-                        <button id="submit" name="submit" class="btn btn-primary" align="center" value="Generate Certificate" >Get Your Certificate</button>
+                        <!-- <button id="mySubmit" name="mySubmit" class="g-recaptcha btn btn-primary" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" data-callback="onSubmit" align="center">Get Your Certificate</button> -->
+                        <button id="mySubmit" name="mySubmit" class="g-recaptcha btn btn-primary" data-sitekey="6LegwyUUAAAAAFMZkIdllyCloNdsdKExfzW3DQPP" data-callback="onSubmit" align="center">Get Your Certificate</button>
                     </div>
                 </td>
             </tr>
