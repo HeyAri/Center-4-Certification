@@ -1,18 +1,11 @@
 <?php require_once 'templates/head.php'; ?>
 
-<script type="text/javascript">
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
-    var onSubmit = function(token) {
-      console.log('success!');
-    };
-
-    var onloadCallback = function() {
-        grecaptcha.render('myForm', {
-            'sitekey' : '6LegwyUUAAAAAFMZkIdllyCloNdsdKExfzW3DQPP', // Production site key
-            // 'sitekey' : '6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI', // Local dev key
-        });
-    };
-
+<script>
+    function onSubmit(token) {
+        document.getElementById("myForm").submit();
+    }
 </script>
 
 <body>
@@ -89,7 +82,7 @@
     <div  align="center">
         <legend>Certify Yourself</legend>
     </div>
-    <form class="form-vertical" align="left" id="myForm" type="GET" action="certificate.php"  method="POST">
+    <form class="form-vertical" align="left" id="myForm" action="certificate.php"  method="POST">
         <table width="100%" align="center">
             <tr>
                 <td>
@@ -216,18 +209,13 @@
             <tr>
                 <td>
                     <div class="form-group" align="center">
-                        <button id="submit" name="submit" class="btn btn-primary" align="center" value="Generate Certificate" >Get Your Certificate
-                        </button>
+                        <!-- <button id="mySubmit" name="mySubmit" class="g-recaptcha btn btn-primary" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" data-callback="onSubmit" align="center">Get Your Certificate</button> -->
+                        <button id="mySubmit" name="mySubmit" class="g-recaptcha btn btn-primary" data-sitekey="6LegwyUUAAAAAFMZkIdllyCloNdsdKExfzW3DQPP" data-callback="onSubmit" align="center">Get Your Certificate</button>
                     </div>
                 </td>
             </tr>
         </table>
-        <!-- Everything has been filled out except for the timestamp, so we include that as a hidden variable -->
-        <input type="hidden" name="certDate" value="<?php echo  date("F j, Y"); ?>" />
     </form>
-    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
-        async defer>
-    </script>
 </section>
 <section class="mbr-section mbr-parallax-background" id="testimonials4-5" style="background-image: url(assets/images/certificate-hero-2000x1500.png); padding-top: 120px; padding-bottom: 120px;">
     <div class="mbr-overlay" style="opacity: 0.8; background-color: rgb(146, 146, 157);"></div>
