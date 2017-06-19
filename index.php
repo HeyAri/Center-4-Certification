@@ -163,7 +163,7 @@
                     <label class="col-md-4 text-right control-label" />Select a style:</label>
                     <div class="col-md-4">
                         <label>
-                            <input type="radio" name="certColor" value="curly"/>
+                            <input type="radio" name="certColor" value="curly" required />
                             <img src="assets/images/C4C-curly-thmb.png" />
                         </label>
                         <label>
