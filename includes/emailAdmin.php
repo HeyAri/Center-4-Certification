@@ -13,7 +13,7 @@ $mail->isHTML(true);                                            // Set email for
 $mail->Subject = $_POST['fullName'].' Certified Themself!';
 $mail->Body    = $_POST['fullName'].' is now'."<br />";
 $mail->Body    .= $_POST['certification'].' as of '."<br />";
-$mail->Body    .= $_POST['certDate'].' and received a '."<br />";
+$mail->Body    .= date("F j, Y").' and received a '."<br />";
 $mail->Body    .= $_POST['certColor'].' certificate.'."<br /><br />";
 $mail->Body    .= $_POST['email'].' '."<br />";
 
