@@ -215,8 +215,6 @@
                 </td>
             </tr>
         </table>
-        <!-- Everything has been filled out except for the timestamp, so we include that as a hidden variable -->
-        <input type="hidden" name="certDate" value="<?php echo  date("F j, Y"); ?>" />
     </form>
 </section>
 <section class="mbr-section mbr-parallax-background" id="testimonials4-5" style="background-image: url(assets/images/certificate-hero-2000x1500.png); padding-top: 120px; padding-bottom: 120px;">

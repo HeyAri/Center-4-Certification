@@ -1,7 +1,9 @@
 <?php
-    error_reporting(E_ALL);
-    ini_set('display_errors', 1);
-    require_once 'templates/head.php';
+
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+require_once 'templates/head.php';
+
 ?>
 
 <body>
@@ -31,7 +33,7 @@
             <img src="assets/images/C4C-<?php echo $_POST['certColor']; ?>.png">
         </div>
         <div align="center" style="position: absolute; left: 301px; top: 210px; width: 418px; height: 429px;" width="1000" text-align: center; padding:20px>
-            <h3><font face="klarissa_contourregular"><?php echo $_POST['certDate'] ?></font><br /></h3>
+            <h3><font face="klarissa_contourregular"><?php echo date("F j, Y"); ?></font><br /></h3>
         	<img src="assets/images/spacer.gif" width="415" height="106"><br>
 			<h2><font face="klarissa_contourregular"><?php echo  $_POST['certification']; ?></font><br /></h2>
 			<img src="assets/images/spacer.gif" width="413" height="98"><br>
@@ -40,6 +42,7 @@
 </section>
 
 <?php
+
 include 'includes/emailAdmin.php';
 require_once 'templates/footer.php';
 
