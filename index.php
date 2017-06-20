@@ -2,12 +2,6 @@
 
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
-<script>
-    function onSubmit(token) {
-        document.getElementById("myForm").submit();
-    }
-</script>
-
 <body>
 
 <section id="menu-0">
@@ -156,7 +150,7 @@
                     <label class="col-md-4 text-right control-label" />Select a style:</label>
                     <div class="col-md-4">
                         <label>
-                            <input type="radio" name="certColor" value="curly" required />
+                            <input type="radio" name="certColor" value="curly" />
                             <img src="assets/images/C4C-curly-thmb.png" />
                         </label>
                         <label>
@@ -209,9 +203,15 @@
             <tr>
                 <td>
                     <div class="form-group" align="center">
-                        <!-- <button id="mySubmit" name="mySubmit" class="g-recaptcha btn btn-primary" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" data-callback="onSubmit" align="center">Get Your Certificate</button> -->
-                        <button id="mySubmit" name="mySubmit" class="g-recaptcha btn btn-primary" data-sitekey="6LegwyUUAAAAAFMZkIdllyCloNdsdKExfzW3DQPP" data-callback="onSubmit" align="center">Get Your Certificate</button>
+                        <!-- <button id="mySubmit" name="mySubmit" class="g-recaptcha btn btn-primary" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" align="center">Get Your Certificate</button> -->
+                        <button id="mySubmit" name="mySubmit" class="g-recaptcha btn btn-primary" data-sitekey="6LegwyUUAAAAAFMZkIdllyCloNdsdKExfzW3DQPP" align="center">Get Your Certificate</button>
+                        <button type="submit" id="actualSubmit" style="display:none"></button>
                     </div>
+                    <script>
+                        $('#mySubmit').click(function(){
+                            $('#actualSubmit').trigger('click');
+                        });
+                    </script>
                 </td>
             </tr>
         </table>
