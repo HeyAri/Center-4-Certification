@@ -19,7 +19,7 @@ require_once 'templates/head.php';
                         </a>
                         <a class="navbar-caption" href="index.php"><font color="grey">Center For Certification</font></a>
                     </div>
-			        <div align="right"><br />
+			        <div float: right><br />
             <button class="btn btn-primary" onClick="window.print()">Print your certificate</button>
         </div>
                 </div>

@@ -21,5 +21,5 @@ if(!$mail->send()) {
     echo 'Page could not be sent.<br />';
     echo 'Page Error: ' . $mail->ErrorInfo;                   // Shows at the bottom of the page
 } else {
-    echo '<br />You are officially certified by the powers vested in the Center for Certification.';                               // Shows at the bottom of the page
+    echo '<center><br />You are officially certified by the powers vested in the Center for Certification.</center>';                               // Shows at the bottom of the page
 }
