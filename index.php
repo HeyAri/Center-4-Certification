@@ -147,7 +147,7 @@
             </tr>
             <tr>
                 <td>
-                    <label class="col-md-4 text-right control-label" />Select a style:</label>
+                    <label id="fv" class="col-md-4 text-right control-label" />Select a style:</label>
                     <div class="col-md-4">
                         <label>
                             <input type="radio" name="certColor" value="curly" />
@@ -209,7 +209,18 @@
                     </div>
                     <script>
                         $('#mySubmit').click(function(){
-                            $('#actualSubmit').trigger('click');
+                            if($("input[name='certColor']:checked").length > 0){
+                                $('#actualSubmit').trigger('click');
+                            }
+                            else {
+                                event.preventDefault();
+                                alert('Please select a style');
+                                // $('#fv').focus();
+                                // console.log('broken');
+                                $('html, body').animate({
+                                    scrollTop: $("#fv").offset().top
+                                }, 2000);
+                            }
                         });
                     </script>
                 </td>
